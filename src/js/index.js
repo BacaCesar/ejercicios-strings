@@ -93,3 +93,12 @@ const upperCaseAndLowerCase = word => {
 upperCaseAndLowerCase('cesar');
 
 //- Crea una función que reciba un nombre y un apellido, y devuelva un nombre de usuario compuesto por la primera letra del nombre, el apellido completo, y un número aleatorio del 1 al 100. Por ejemplo, "Juan Perez" podría convertirse en "JPerez87".
+
+const userName =(name, lastName)=>{
+  const firstLetter = name.charAt(0);
+  const randomNumber = Math.floor(Math.random()*101);
+  console.log (firstLetter + lastName + randomNumber);
+
+};
+
+userName ('cesar' , 'baca')
